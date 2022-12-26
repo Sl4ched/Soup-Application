@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context=".SoupSelections">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/logo2" />
+
+    <TextView
+        android:id="@+id/soup_name"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_marginStart="15dp"
+        android:textColor="#CD6A4F"
+        android:textSize="25sp"
+        />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tuz Oranı"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        />
+
+    <SeekBar
+        android:id="@+id/seekbarOfSalt"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="2"
+        android:theme="@style/Theme.MaterialComponents"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
+        android:progress="0"
+        />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Acı Oranı"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="15dp"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        />
+
+    <SeekBar
+        android:id="@+id/seekbarOfBitter"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.MaterialComponents"
+        android:progressBackgroundTint="@color/white"
+        android:max="2"
+        android:progress="0"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
+
+        />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:text="Lütfen İstediklerinizi İşaretleyiniz"
+        android:textColor="#CD6A4F"
+        android:textSize="22sp" />
+
+    <LinearLayout
+        tools:ignore="UseSwitchCompatOrMaterialXml"
+        android:layout_width="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Switch
+                android:visibility="invisible"
+                android:id="@+id/switchSarimsak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"
+                android:text="Sarımsak"
+                android:minHeight="48dp"
+                android:textSize="18sp"
+                android:theme="@style/Theme.MaterialComponents"
+
+               />
+
+            <Switch
+                android:id="@+id/switchTerbiye"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"
+                android:minHeight="48dp"
+                android:text="Terbiye"
+                android:textSize="18sp"
+                android:theme="@style/Theme.MaterialComponents"
+                android:visibility="invisible"
+                />
+
+            <Switch
+                android:id="@+id/switchKrema"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"
+                android:minHeight="48dp"
+                android:text="Krema"
+                android:textSize="18sp"
+                android:theme="@style/Theme.MaterialComponents"
+                android:visibility="invisible"
+                />
+
+            <Switch
+                android:id="@+id/switchKitir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"
+                android:minHeight="48dp"
+                android:text="Kıtır"
+                android:textSize="18sp"
+                android:theme="@style/Theme.MaterialComponents"
+                android:visibility="invisible"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Switch
+                android:id="@+id/switchNane"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"
+                android:minHeight="48dp"
+                android:text="Nane"
+                android:textSize="18sp"
+                android:theme="@style/Theme.MaterialComponents"
+                android:visibility="invisible"/>
+
+            <Switch
+                android:id="@+id/switchBeyin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"
+                android:minHeight="48dp"
+                android:text="Beyin"
+                android:textSize="18sp"
+                android:theme="@style/Theme.MaterialComponents"
+                android:visibility="invisible"/>
+
+            <Switch
+                android:id="@+id/switchYag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"
+                android:minHeight="48dp"
+                android:text="Yağ"
+                android:textSize="18sp"
+                android:theme="@style/Theme.MaterialComponents"
+                android:visibility="invisible"/>
+
+            <Switch
+                android:id="@+id/switchLimon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"
+                android:minHeight="48dp"
+                android:text="Limon"
+                android:textSize="18sp"
+                android:theme="@style/Theme.MaterialComponents"
+                android:visibility="invisible"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Switch
+                android:id="@+id/switchDil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"
+                android:minHeight="48dp"
+                android:text="Dil"
+                android:textSize="18sp"
+                android:theme="@style/Theme.MaterialComponents"
+                android:visibility="invisible"/>
+
+            <Switch
+                android:id="@+id/switchSirke"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"
+                android:minHeight="48dp"
+                android:text="Sirke"
+                android:textSize="18sp"
+                android:theme="@style/Theme.MaterialComponents"
+                android:visibility="invisible"/>
+
+            <Switch
+                android:id="@+id/switchKasar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"
+                android:minHeight="48dp"
+                android:text="Kaşar"
+                android:textSize="18sp"
+                android:theme="@style/Theme.MaterialComponents"
+                android:visibility="invisible"/>
+
+            <Switch
+                android:id="@+id/switchTozBiber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"
+                android:minHeight="48dp"
+                android:text="Toz Biber"
+                android:textSize="18sp"
+                android:theme="@style/Theme.MaterialComponents"
+                android:visibility="invisible"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:text="Ekstra İstekleriniz Yazabilirsiniz"
+        android:textColor="#CD6A4F"
+        android:textSize="22sp" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="Başka Bir Arzunuz?"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:text=""
+        android:theme="@style/Theme.MaterialComponents" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="126dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:backgroundTint="#DD482C"
+        android:text="Sipariş Ver" />
+
+</LinearLayout>
